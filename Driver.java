@@ -30,14 +30,14 @@ public class Driver {
         Client objClient2 = new Client("receiving");            /* Start the receiving client thread*/
         objClient2.start();
 
-        try{
-            objClient1.join();
-            objClient2.join();
-            objServer.join();
-            objNetwork.join();
-        } catch (InterruptedException e){
-            e.printStackTrace();
-        }
+//        try{
+//            objClient1.join();
+//            objClient2.join();
+//            objServer.join();
+//            objNetwork.join();
+//        } catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
 
     }
 }
