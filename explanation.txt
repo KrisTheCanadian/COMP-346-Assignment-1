@@ -1,2 +1,4 @@
-The reason why threads are exiting in different order is because some threads have to access resources which requires to wait or receive the information right away. The time of execution is depended on the resources and processes on the CPU. Therefore, it you cannot assume that each process will exit at the same time every output. (this is a common problem in multithreading)
+The reason why threads are exiting in different order is because threads are scheduled by the OS and the OS determines when threads will run according to priority.
+The time of execution is depended on the resources and processes on the CPU and the logical / physical cores available (resources).
+Therefore, you cannot assume that each process will exit at the same time every output. Because they can be scheduled by the OS in different order (this is a common problem in multithreading)
 
